@@ -1,0 +1,44 @@
+#loading-screen {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 400ms ease-in-out;
+}
+
+.loading-item {
+    margin: 3px 0;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.active {
+    color: var(--foreground);
+    background-color: var(--background-3);
+    cursor: pointer;
+}
+.inactive {
+    color: var(--foreground);
+    background-color: var(--background-2);
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+.inactive:hover {
+    background-color: var(--background-3);
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header .inline-block {
+    padding: 3px 7px;
+}
+
+.core-1-bar, .core-2-bar {
+    background-color: var(--highlight-red);
+}

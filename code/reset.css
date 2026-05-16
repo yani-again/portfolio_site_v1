@@ -1,0 +1,322 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* credit for scrollbar code: u/lift_spin_d/ (reddit) */
+/* hide page scrollbar */
+html { scrollbar-width: none; } /* Firefox */
+body { -ms-overflow-style: none; } /* IE and Edge */
+body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+/* end hide page scrollbar */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face
+{
+  font-family: JetBrains;
+  src: url("./public/JetBrains-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face
+{
+  font-family: JetBrains;
+  src: url("./public/JetBrains-Bold.ttf");
+  font-weight: bold;
+}
+
+:root
+{
+  font-family: JetBrains, monospace;
+  font-weight: bold;
+
+  --background: #191929;
+  --background-2: #303243;
+  --background-3: #43465a;
+  --background-4: #65687c;
+  --foreground: #cdd5f0;
+  --foreground-2: #9aa2bd;
+  --foreground-3: #676f8a;
+  --highlight-green: #a6e2a7;
+  --highlight-yellow: #f8deac;
+  --highlight-orange: #f4a983;
+  --highlight-red: #dc6f89;
+  --highlight-blue: #a5c0ff;
+  --link: #4c73f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  --font-sm: 20px;
+}
+
+body
+{
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.2em;
+  font-size: var(--font-sm);
+  overflow-x: hidden;
+
+  padding: 2ch 4ch;
+  white-space: nowrap;
+  font-weight: bold;
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+::selection
+{
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-1 {
+    gap: 1ch;
+}
+.gap-2 {
+    gap: 2ch;
+}
+.gap-4 {
+    gap: 4ch;
+}
+
+.jc {
+    justify-content: center;
+}
+.js {
+    justify-content: flex-start;
+}
+.je {
+    justify-content: flex-end;
+}
+.jb {
+    justify-content: space-between;
+}
+.ja {
+    justify-content: space-around;
+}
+
+.ac {
+    align-items: center;
+}
+.as {
+    align-items: flex-start;
+}
+.ae {
+    align-items: flex-end;
+}
+
+.gray {
+    color: var(--foreground-2);
+}
+.highlight {
+    color: var(--highlight-orange);
+}
+.bold {
+    font-size: 1.1rem;
+}
+.bolder {
+    font-size: 1.31em;
+    margin-bottom: 1ch;
+}
+.bg-1 {
+    color: var(--background);
+}
+.bg-2 {
+    color: var(--background-2);
+}
+.bg-3 {
+    color: var(--background-3);
+}
+.bg-4 {
+    color: var(--background-4);
+}
+.fg-1 {
+    color: var(--foreground);
+}
+.fg-2 {
+    color: var(--foreground-2);
+}
+.fg-3 {
+    color: var(--foreground-3);
+}
+.fg-9 {
+    color: var(--background);
+}
+.green {
+    color: var(--highlight-green);
+}
+.red {
+    color: var(--highlight-red);
+}
+.orange {
+    color: var(--highlight-orange);
+}
+.yellow {
+    color: var(--highlight-yellow);
+}
+.blue {
+    color: var(--highlight-blue);
+}
+
+.pl-1 {
+    padding-left: 1ch;
+}
+.pl-2 {
+    padding-left: 2ch;
+}
+.pl-4 {
+    padding-left: 4ch;
+}
+.pl-8 {
+    padding-left: 8ch;
+}
+
+.pb-xxs {
+    padding-bottom: 2px;
+}
+.pb-xs {
+    padding-bottom: 5px;
+}
+.pb-sm {
+    padding-bottom: 10px;
+}
+.pb-md {
+    padding-bottom: 20px;
+}
+.pb-lg {
+    padding-bottom: 40px;
+}
+
+.pl-xs {
+    padding-left: 5px;
+}
+.pl-sm {
+    padding-left: 10px;
+}
+.pl-md {
+    padding-left: 20px;
+}
+.pl-lg {
+    padding-left: 40px;
+}
+
+.mt-xs {
+    margin-top: 5px;
+}
+.mt-sm {
+    margin-top: 10px;
+}
+.mt-md {
+    margin-top: 20px;
+}
+.mt-lg {
+    margin-top: 40px;
+}
+
+.mb-1 {
+    margin-bottom: 1ch;
+}
+.mb-2 {
+    margin-bottom: 2ch;
+}
+.mb-4 {
+    margin-bottom: 4ch;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+
+pre {
+    font-family: JetBrains, monospace;
+    font-weight: bold;
+}
+
+.bg-blue {
+    background-color: var(--highlight-blue);
+}
+.bg-green {
+    background-color: var(--highlight-green);
+}

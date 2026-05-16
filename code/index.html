@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Yanislav Yankov | Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section id="loading-screen" class="flex jc ac" style="z-index: 999 !important;">
+        <div class="flex-column">
+            <span class="loading-item" data-delay="0"><span class="gray">[    0.000000]</span> ARM Cortex-M0 Core Initialised</span>
+            <span class="loading-item" data-delay="800"><span class="gray">[    0.812341]</span> Flash: 0x08000000 - 0x08020000 (128KB)</span>
+            <span class="loading-item" data-delay="890"><span class="gray">[    0.812398]</span> SRAM: 0x20000000 - 0x20005000 (20KB)</span>
+            <span class="loading-item" data-delay="950"><span class="gray">[    0.812671]</span> Configuring GPIO Pins...</span>
+            <span class="loading-item" data-delay="1500"><span class="gray">[    1.509331]</span> Clock: 48MHz (HSE + PLL)</span>
+            <span class="loading-item" data-delay="1550"><span class="gray">[    1.511827]</span> SPI1: OK</span>
+            <span class="loading-item" data-delay="1560"><span class="gray">[    1.514092]</span> I2C1: OK</span>
+            <span class="loading-item" data-delay="1575"><span class="gray">[    1.517451]</span> USART3: OK</span>
+            <span class="loading-item" data-delay="2200"><span class="gray">[    2.197451]</span> RTOS Scheduler Starting...</span>
+            <span class="loading-item" data-delay="2900"><span class="gray">[    2.989992]</span> Ready.</span>
+        </div>
+    </section>
+
+    <header class="mb-2">
+        <span class="block pb-xs">Page</span>
+        <span class="active inline-block" data-page="home">Home</span><!--
+        --><span class="inactive inline-block" data-page="projects">Projects</span><!--
+        --><span class="inactive inline-block" data-page="about">About</span><!--
+        --><span class="inactive inline-block" data-page="contact">Contact</span><!--
+        --><span class="inactive inline-block" data-page="blog">Blog</span>
+    </header>
+
+    <section data-page="home" class="flex-column">
+        <div id="summary" class="mb-2">
+            <span class="bolder inline-block">General Information About Me</span>
+            <br>
+            <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">SUMMARY</span> <span class="fg-3">────────────────────────────────────────────┬── <span class="blue">LOCATION</span> ───────────────────────────────────────────┐</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>                                                       <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">       </span><span class="bg-green">|▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔\</span><span class="bg-blue"> </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Name:</span>           Yanislav Yankov                      <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">        </span><span class="bg-green">\                                           |</span><span class="bg-blue"></span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Course:</span>         Computer Science BSc, 1nd year       <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">      __</span><span class="bg-green">/              <span class="bg-4">#</span>                            |</span><span class="bg-blue"></span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">University:</span>     University of Hertfordshire          <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">   __</span><span class="bg-green">/             <span class="bg-4">Birmingham</span>              <span class="bg-4">Ipswich</span>_/</span><span class="bg-blue"> </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Location:</span>       Hertfordshire &amp; London, England      <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">__</span><span class="bg-green">/                          <span class="bg-4">Oxford</span>             <span class="bg-4">#</span>/</span><span class="bg-blue">   </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Languages:</span>      C, Python, JavaScript                <span class="fg-3">│</span><span class="fg-9"> <span class="bg-green">▏  __                           <span class="bg-4">#</span>     <span style="color: black;">* ME</span>     _/</span><span class="bg-blue">    </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Interests:</span>      Embedded systems &amp; low-level C       <span class="fg-3">│</span><span class="fg-9"> <span class="bg-green">▏_/</span><span class="bg-blue">  </span><span class="bg-green">\___<span class="bg-4">Cardiff</span>___                         __/</span><span class="bg-blue">      </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Skills:</span>         Linux, programming, problem-solving  <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">         </span><span class="bg-green">\____<span class="bg-4">#</span>/</span><span class="bg-blue"> _</span><span class="bg-green">/ <span class="bg-4">#</span>                  <span class="bg-4">#</span>   /</span><span class="bg-blue">___      </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">GitHub:</span>         <a href="#" target="_blank">github.com/yani-again</a> <span class="gray">(click)</span>        <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">       ____     </span><span class="bg-green">/  <span class="bg-4">Bristol</span>           <span class="bg-4">London</span>    \</span><span class="bg-blue">__   </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Platforms:</span>      STM32, Linux                         <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">    __</span><span class="bg-green">/    \</span><span class="bg-blue">___</span><span class="bg-green">/                                <span class="bg-4">#</span>/</span><span class="bg-blue">   </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Current Goal:</span>   Improve in C &amp; Python                <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">   </span><span class="bg-green">/                         ____    ___   ____/</span><span class="bg-blue"><span class="bg-4">Dover</span></span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">│</span>                                                       <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">  </span><span class="bg-green">/_________________________/</span><span class="bg-blue">    </span><span class="bg-green">\__/</span><span class="bg-blue">   </span><span class="bg-green">\_/</span><span class="bg-blue">          </span><span class="fg-3"> │</span></pre>
+            <br>
+            <pre class="inline-block"><span class="fg-3">└───────────────────────────────────────────────────────┴───────────────────────────────────────────────────────┘</span></pre>
+
+        </div>
+        <div id="telemetry">
+            <span class="bolder block">System Info <span class="bold gray">(Only For Decoration)</span></span>
+            <div class="flex flex-wrap gap-1">
+                <div id="cpu-usage">
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">CPU USAGE</span> <span class="fg-3">───────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                    │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="10">        </span>  <span class="core-2-bar" data-bar="11">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="9">        </span>  <span class="core-2-bar" data-bar="9">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="8">        </span>  <span class="core-2-bar" data-bar="8">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="7">        </span>  <span class="core-2-bar" data-bar="7">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="6">        </span>  <span class="core-2-bar" data-bar="6">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="5">        </span>  <span class="core-2-bar" data-bar="5">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="4">        </span>  <span class="core-2-bar" data-bar="4">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="3">        </span>  <span class="core-2-bar" data-bar="3">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="2">        </span>  <span class="core-2-bar" data-bar="2">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="1">        </span>  <span class="core-2-bar" data-bar="1">        </span> <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span>  CORE 1    CORE 2  <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└────────────────────┘</span></pre>
+                </div>
+                <div id="processes">
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">ACTIVE PROCESSES</span> <span class="fg-3">─────────────────────────────────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="blue"> Process                 CPU (%)   Memory    Status  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">├─────────────────────────────────────────────────────┤</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:100%;background-color:var(--highlight-red);color:var(--background);" class="inline-block"> coffee_level_sensor      14.67     152K    Critical </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:75%;background-color:var(--highlight-orange);color:var(--background);" class="inline-block"> portfolio_renderer        9.12     104K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:70%;background-color:var(--highlight-yellow);color:var(--background);" class="inline-block"> rtos_scheduler            3.04      42K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:65%;"> project_manager           1.55      38K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:58%;"> telemetry_scanner         1.20      34K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:53%;"> github_sync               1.16      29K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:50%;"> deadline_tracker          0.85      20K    Idle     </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:49%;"> power_management          0.72       6K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:47%;"> clock_manager             0.51       4K    Running  </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:45%;"> watchdog_timer            0.06     512B    Idle     </span><span class ="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└─────────────────────────────────────────────────────┘</span></pre>
+                </div>
+                <!--<div id="monitoring">
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">SYSTEM MONITORING</span> <span class="fg-3">──────────────────────────────────────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:100%;"> <span class="green">[DEBUG]</span> portfolio_main.c:142 - HTTP request received      </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:75%;"> <span class="yellow">[INFO ]</span> request_handler.c:67 - Route: /projects           </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:70%;"> <span class="green">[DEBUG]</span> cache_mgr.c:203 - Cache hit: projects_data        </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:65%;"> <span class="red">[PERF ]</span> render.c:89 - Page render: 12.4ms                 </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:58%;"> <span class="green">[DEBUG]</span> analytics.c:156 - Visitor logged: 192.168.1.42    </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:53%;"> <span class="yellow">[INFO ]</span> gpio.c:234 - LED_STATUS: ON                       </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:50%;"> <span class="green">[DEBUG]</span> i2c_eeprom.c:78 - Reading visitor count...        </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:49%;"> <span class="blue">[DATA ]</span> i2c_eeprom.c:81 - RX: 0x00 0x04 0xD2 0x3F         </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:47%;"> <span class="yellow">[INFO ]</span> counter.c:45 - Total visits: 2310                 </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:44%;"> <span class="green">[DEBUG]</span> power_mgr.c:92 - Load: 23% | Temp: 42°C           </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:41%;"> <span class="red">[PERF ]</span> main.c:567 - Request completed: 45.8ms            </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span style="opacity:38%;"> <span class="green">[DEBUG]</span> uart_tx.c:112 - Sending response (2.1KB)          </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└───────────────────────────────────────────────────────────┘</span></pre>
+                </div>-->
+                <div class="memory-usage">
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">MEMORY USAGE</span> <span class="fg-3">────────────────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> Total:                 1024 KB <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">├</span> <span class="gray">Used: 61% ───────────── 592 KB</span> <span class="fg-3">┤</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="red">███████████████████</span>░░░░░░░░░░░ <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span>                                <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">├</span> <span class="gray">Available: 22% ──────── 237 KB</span> <span class="fg-3">┤</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="orange">█████████</span>░░░░░░░░░░░░░░░░░░░░░ <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span>                                <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">├</span> <span class="gray">Cached: 10% ───────────  96 KB</span> <span class="fg-3">┤</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="yellow">████</span>░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span>                                <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">├</span> <span class="gray">Free: 7% ─────────────── 70 KB</span> <span class="fg-3">┤</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="green">██</span>░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└────────────────────────────────┘</span></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-page="projects">
+    </section>
+
+    <section data-page="about">
+    </section>
+
+    <section data-page="contact">
+    </section>
+
+    <section data-page="blog">
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

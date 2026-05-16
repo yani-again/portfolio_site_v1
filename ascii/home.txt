@@ -1,0 +1,78 @@
+Page
+Home Projects About Contact Blog
+
+┌── SUMMARY ────────────────────────────────────────────┐
+│                                                       │
+│  Name:           Yanislav Yankov                      │
+│  Course:         Computer Science BSc, 1nd year       │
+│  University:     University of Hertfordshire          │
+│  Location:       Hertfordshire & London, England      │
+│  Languages:      C, Python, JavaScript                │
+│  Interests:      Embedded systems & low-level C       │
+│  Skills:         Linux, programming, problem-solving  │
+│  GitHub:         github.com/yani-again (click)        │
+│  Platforms:      STM32, Linux                         │
+│  Current Goal:   Improve in C & Python                │
+│                                                       │
+└───────────────────────────────────────────────────────┘
+
+┌── CPU USAGE ───────┐
+│                    │
+│                    │
+│                    │
+│ ████████           │
+│ ████████           │
+│ ████████           │
+│ ████████           │
+│ ████████           │
+│ ████████  ████████ │
+│ ████████  ████████ │
+│ ████████  ████████ │
+│  CORE 1    CORE 2  │
+└────────────────────┘
+
+┌── ACTIVE PROCESSES ─────────────────────────────────┐
+│ Process                 CPU (%)   Memory    Status  │
+├─────────────────────────────────────────────────────┤
+│ coffee_level_sensor      14.67     152K    Critical │
+│ portfolio_renderer       09.12     104K    Running  │
+│ rtos_scheduler           03.04     042K    Running  │
+│ project_manager          01.55     038K    Running  │
+│ telemetry_scanner        01.20     034K    Running  │
+│ github_sync              01.16     029K    Running  │
+│ deadline_tracker         00.85     020K    Idle     │
+│ power_management         00.72     006K    Running  │
+│ clock_manager            00.51     004K    Running  │
+│ watchdog_timer           00.06     512B    Idle     │
+└─────────────────────────────────────────────────────┘
+
+┌── SYSTEM MONITORING ──────────────────────────────────────┐
+│ [DEBUG] portfolio_main.c:142 - HTTP request received      │
+│ [INFO ] request_handler.c:67 - Route: /projects           │
+│ [DEBUG] cache_mgr.c:203 - Cache hit: projects_data        │
+│ [PERF ] render.c:89 - Page render: 12.4ms                 │
+│ [DEBUG] analytics.c:156 - Visitor logged: 192.168.1.42    │
+│ [INFO ] gpio.c:234 - LED_STATUS: ON                       │
+│ [DEBUG] i2c_eeprom.c:78 - Reading visitor count...        │
+│ [DATA ] i2c_eeprom.c:81 - RX: 0x00 0x04 0xD2 0x3F         │
+│ [INFO ] counter.c:45 - Total visits: 2310                 │
+│ [DEBUG] power_mgr.c:92 - Load: 23% | Temp: 42°C           │
+│ [PERF ] main.c:567 - Request completed: 45.8ms            │
+│ [DEBUG] uart_tx.c:112 - Sending response (2.1KB)          │
+└───────────────────────────────────────────────────────────┘
+
+┌── MEMORY USAGE ────────────────┐
+│ Total:                 1024 KB │
+├ Used: 61% ───────────── 592 KB ┤
+│ ███████████████████░░░░░░░░░░░ │
+│                                │
+├ Available: 22% ──────── 237 KB ┤
+│ █████████░░░░░░░░░░░░░░░░░░░░░ │
+│                                │
+├ Cached: 10% ──────────── 96 KB ┤
+│ ████░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                │
+├ Free: 7% ─────────────── 70 KB ┤
+│ ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+└────────────────────────────────┘
+
