@@ -79,8 +79,7 @@ html {
   font-weight: bold;
 }
 
-:root
-{
+:root {
   font-family: JetBrains, monospace;
   font-weight: bold;
 
@@ -102,14 +101,10 @@ html {
   align-items: center;
   justify-content: center;
 
-  width: 100vw;
-  height: 100vh;
-
-  --font-sm: 20px;
+  --font-sm: 18px;
 }
 
-body
-{
+body {
   background-color: var(--background);
   color: var(--foreground);
   line-height: 1.2em;
@@ -121,8 +116,7 @@ body
   font-weight: bold;
   position: relative;
 
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 ::selection
@@ -319,4 +313,25 @@ pre {
 }
 .bg-green {
     background-color: var(--highlight-green);
+}
+.bg-orange {
+    background-color: var(--highlight-orange);
+}
+.bg-red {
+    background-color: var(--highlight-red);
+}
+.bg-yellow {
+    background-color: var(--highlight-yellow);
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.page-inactive {
+    display: none;
+}
+
+.text-centered {
+    text-align: center;
 }

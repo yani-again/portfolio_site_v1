@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body style="flex-column jc ac">
     <section id="loading-screen" class="flex jc ac" style="z-index: 999 !important;">
         <div class="flex-column">
             <span class="loading-item" data-delay="0"><span class="gray">[    0.000000]</span> ARM Cortex-M0 Core Initialised</span>
@@ -26,16 +26,17 @@
         </div>
     </section>
 
-    <header class="mb-2">
-        <span class="block pb-xs">Page</span>
-        <span class="active inline-block" data-page="home">Home</span><!--
-        --><span class="inactive inline-block" data-page="projects">Projects</span><!--
-        --><span class="inactive inline-block" data-page="about">About</span><!--
-        --><span class="inactive inline-block" data-page="contact">Contact</span><!--
-        --><span class="inactive inline-block" data-page="blog">Blog</span>
+    <header class="mb-2 fit-content" style="margin-left: auto; margin-right: auto;">
+        <span class="block pb-xs text-centered">Page</span>
+        <span class="active inline-block nav-item" data-active=1 onclick="change_page('home')" id="nav-home">Home</span><!--
+        --><span class="inactive inline-block nav-item" data-active=0 onclick="change_page('projects')" id="nav-projects">Projects</span><!--
+        --><span class="inactive inline-block nav-item" data-active=0 onclick="change_page('about')" id="nav-about">About</span><!--
+        --><span class="inactive inline-block nav-item" data-active=0 onclick="change_page('contact')" id="nav-contact">Contact</span><!--
+        --><span class="inactive inline-block nav-item" data-active=0 onclick="change_page('blog')" id="nav-blog">Blog</span>
     </header>
 
-    <section data-page="home" class="flex-column">
+    <!--<section id="home" class="flex-column fit-content">-->
+    <section id="home" class="flex-column fit-content page-inactive">
         <div id="summary" class="mb-2">
             <span class="bolder inline-block">General Information About Me</span>
             <br>
@@ -76,7 +77,7 @@
                     <br>
                     <pre class="inline-block"><span class="fg-3">│                    │</span></pre>
                     <br>
-                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="10">        </span>  <span class="core-2-bar" data-bar="11">        </span> <span class="fg-3">│</span></pre>
+                    <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="10">        </span>  <span class="core-2-bar" data-bar="10">        </span> <span class="fg-3">│</span></pre>
                     <br>
                     <pre class="inline-block"><span class="fg-3">│</span> <span class="core-1-bar" data-bar="9">        </span>  <span class="core-2-bar" data-bar="9">        </span> <span class="fg-3">│</span></pre>
                     <br>
@@ -191,16 +192,118 @@
         </div>
     </section>
 
-    <section data-page="projects">
+    <!--<section id="projects" class="page-inactive">-->
+    <section id="projects" class="">
+        <div class="flex flex-wrap">
+            <div>
+                <span class="bolder block">Project List <span class="bold gray">(click)</span></span>
+                <div class="inline-block project-wrapper active">
+                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> Guitar Hero Clone </span>─────────────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└─────────────────────────<span class="project-tag bg-green"> RP2040 </span>┘</span></pre>
+                </div>
+                <br>
+                <div class="inline-block project-wrapper">
+                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> RaspberryUSB </span>──────────────────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└─────────────────────────<span class="project-tag bg-green"> RP2040 </span>┘</span></pre>
+                </div>
+                <br>
+                <div class="inline-block project-wrapper">
+                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> SSH Brute Force Detector </span>──────┐</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
+                    <br>
+                    <pre class="inline-block"><span class="fg-3">└──────────────────────────<span class="project-tag bg-orange"> Linux </span>┘</span></pre>
+                </div>
+            </div>
+            <div id="project-1" class="active">
+                <pre class="inline-block"><span class="fg-3">┌──</span><span class="blue"> DETAILS </span><span class="fg-3">─────────────────────────────────────────────────────────────────┐</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
+                <br>
+                <pre class="inline-block"><span class="fg-3">└───────────────────────────────────────────────────────────────<a href="#" target="_blank"> GitHub Repo </a>┘</span></pre>
+            </div>
+        </div>
     </section>
 
-    <section data-page="about">
+    <section id="about" class="page-inactive">
     </section>
 
-    <section data-page="contact">
+    <section id="contact" class="page-inactive">
     </section>
 
-    <section data-page="blog">
+    <section id="blog" class="page-inactive">
     </section>
 
     <script src="index.js"></script>

@@ -14,25 +14,19 @@
     transition: opacity 250ms ease-in-out;
 }
 
-.active {
+.nav-item.active {
     color: var(--foreground);
     background-color: var(--background-3);
     cursor: pointer;
 }
-.inactive {
+.nav-item.inactive {
     color: var(--foreground);
     background-color: var(--background-2);
     cursor: pointer;
     transition: background-color 250ms ease-in-out;
 }
-.inactive:hover {
+.nav-item.inactive:hover {
     background-color: var(--background-3);
-}
-
-#home {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 header .inline-block {
@@ -41,4 +35,18 @@ header .inline-block {
 
 .core-1-bar, .core-2-bar {
     background-color: var(--highlight-red);
+}
+
+.project-tag {
+    color: var(--background);
+    border-radius: 5px;
+}
+.project-wrapper {
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    transition: background-color 250ms ease-in-out;
+}
+.project-wrapper:hover, .project-wrapper.active {
+    background-color: var(--background-2);
 }
