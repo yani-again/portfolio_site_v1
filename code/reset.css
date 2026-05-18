@@ -95,13 +95,14 @@ html {
   --highlight-orange: #f4a983;
   --highlight-red: #dc6f89;
   --highlight-blue: #a5c0ff;
+  --highlight-purple: #db95ff;
   --link: #4c73f3;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  --font-sm: 18px;
+  --font-sm: clamp(12px, 1vw, 18px);
 }
 
 body {
@@ -186,6 +187,10 @@ body {
     font-size: 1.31em;
     margin-bottom: 1ch;
 }
+.boldest {
+    font-size: 2em;
+    margin-bottom: 1ch;
+}
 .bg-1 {
     color: var(--background);
 }
@@ -224,6 +229,9 @@ body {
 }
 .blue {
     color: var(--highlight-blue);
+}
+.purple {
+    color: var(--highlight-purple);
 }
 
 .pl-1 {
@@ -294,6 +302,12 @@ body {
 a {
     color: var(--link);
     text-decoration: none;
+    border-radius: 5px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+a:hover {
+    color: var(--background);
+    background-color: var(--link);
 }
 
 .block {
@@ -334,4 +348,7 @@ pre {
 
 .text-centered {
     text-align: center;
+}
+.underline {
+    text-decoration: underline;
 }

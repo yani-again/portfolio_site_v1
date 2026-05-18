@@ -14,13 +14,13 @@
     <section id="loading-screen" class="flex jc ac" style="z-index: 999 !important;">
         <div class="flex-column">
             <span class="loading-item" data-delay="0"><span class="gray">[    0.000000]</span> ARM Cortex-M0 Core Initialised</span>
-            <span class="loading-item" data-delay="800"><span class="gray">[    0.812341]</span> Flash: 0x08000000 - 0x08020000 (128KB)</span>
-            <span class="loading-item" data-delay="890"><span class="gray">[    0.812398]</span> SRAM: 0x20000000 - 0x20005000 (20KB)</span>
+            <span class="loading-item" data-delay="800"><span class="gray">[    0.812341]</span> Flash: <span class="yellow">0x08000000 - 0x08020000</span> <span class="gray">(128KB)</span></span>
+                <span class="loading-item" data-delay="890"><span class="gray">[    0.812398]</span> SRAM: <span class="yellow">0x20000000 - 0x20005000</span> <span class="gray">(20KB)</span></span>
             <span class="loading-item" data-delay="950"><span class="gray">[    0.812671]</span> Configuring GPIO Pins...</span>
-            <span class="loading-item" data-delay="1500"><span class="gray">[    1.509331]</span> Clock: 48MHz (HSE + PLL)</span>
-            <span class="loading-item" data-delay="1550"><span class="gray">[    1.511827]</span> SPI1: OK</span>
-            <span class="loading-item" data-delay="1560"><span class="gray">[    1.514092]</span> I2C1: OK</span>
-            <span class="loading-item" data-delay="1575"><span class="gray">[    1.517451]</span> USART3: OK</span>
+            <span class="loading-item" data-delay="1500"><span class="gray">[    1.509331]</span> Clock: <span class="yellow">48MHz</span> <span class="gray">(HSE + PLL)</span></span>
+            <span class="loading-item" data-delay="1550"><span class="gray">[    1.511827]</span> SPI1: <span class="green">OK</span></span>
+            <span class="loading-item" data-delay="1560"><span class="gray">[    1.514092]</span> I2C1: <span class="green">OK</span></span>
+            <span class="loading-item" data-delay="1575"><span class="gray">[    1.517451]</span> USART3: <span class="green">OK</span></span>
             <span class="loading-item" data-delay="2200"><span class="gray">[    2.197451]</span> RTOS Scheduler Starting...</span>
             <span class="loading-item" data-delay="2900"><span class="gray">[    2.989992]</span> Ready.</span>
         </div>
@@ -35,12 +35,11 @@
         --><span class="inactive inline-block nav-item" data-active=0 onclick="change_page('blog')" id="nav-blog">Blog</span>
     </header>
 
-    <!--<section id="home" class="flex-column fit-content">-->
-    <section id="home" class="flex-column fit-content page-inactive">
+    <section id="home" class="flex-column fit-content">
         <div id="summary" class="mb-2">
             <span class="bolder inline-block">General Information About Me</span>
             <br>
-            <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">SUMMARY</span> <span class="fg-3">────────────────────────────────────────────┬── <span class="blue">LOCATION</span> ───────────────────────────────────────────┐</span></pre>
+            <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">Summary</span> <span class="fg-3">────────────────────────────────────────────┬── <span class="blue">Location</span> ───────────────────────────────────────────┐</span></pre>
             <br>
             <pre class="inline-block"><span class="fg-3">│</span>                                                       <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">       </span><span class="bg-green">|▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔\</span><span class="bg-blue"> </span><span class="fg-3"> │</span></pre>
             <br>
@@ -58,7 +57,7 @@
             <br>
             <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Skills:</span>         Linux, programming, problem-solving  <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">         </span><span class="bg-green">\____<span class="bg-4">#</span>/</span><span class="bg-blue"> _</span><span class="bg-green">/ <span class="bg-4">#</span>                  <span class="bg-4">#</span>   /</span><span class="bg-blue">___      </span><span class="fg-3"> │</span></pre>
             <br>
-            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">GitHub:</span>         <a href="#" target="_blank">github.com/yani-again</a> <span class="gray">(click)</span>        <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">       ____     </span><span class="bg-green">/  <span class="bg-4">Bristol</span>           <span class="bg-4">London</span>    \</span><span class="bg-blue">__   </span><span class="fg-3"> │</span></pre>
+            <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">GitHub:</span>        <a href="#" target="_blank"> github.com/yani-again </a><span class="gray">(click)</span>        <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">       ____     </span><span class="bg-green">/  <span class="bg-4">Bristol</span>           <span class="bg-4">London</span>    \</span><span class="bg-blue">__   </span><span class="fg-3"> │</span></pre>
             <br>
             <pre class="inline-block"><span class="fg-3">│</span>  <span class="blue">Platforms:</span>      STM32, Linux                         <span class="fg-3">│</span><span class="fg-9"> <span class="bg-blue">    __</span><span class="bg-green">/    \</span><span class="bg-blue">___</span><span class="bg-green">/                                <span class="bg-4">#</span>/</span><span class="bg-blue">   </span><span class="fg-3"> │</span></pre>
             <br>
@@ -73,7 +72,7 @@
             <span class="bolder block">System Info <span class="bold gray">(Only For Decoration)</span></span>
             <div class="flex flex-wrap gap-1">
                 <div id="cpu-usage">
-                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">CPU USAGE</span> <span class="fg-3">───────┐</span></pre>
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">CPU Usage</span> <span class="fg-3">───────┐</span></pre>
                     <br>
                     <pre class="inline-block"><span class="fg-3">│                    │</span></pre>
                     <br>
@@ -102,7 +101,7 @@
                     <pre class="inline-block"><span class="fg-3">└────────────────────┘</span></pre>
                 </div>
                 <div id="processes">
-                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">ACTIVE PROCESSES</span> <span class="fg-3">─────────────────────────────────┐</span></pre>
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">Active Processes</span> <span class="fg-3">─────────────────────────────────┐</span></pre>
                     <br>
                     <pre class="inline-block"><span class="fg-3">│</span><span class="blue"> Process                 CPU (%)   Memory    Status  </span><span class ="fg-3">│</span></pre>
                     <br>
@@ -160,7 +159,7 @@
                     <pre class="inline-block"><span class="fg-3">└───────────────────────────────────────────────────────────┘</span></pre>
                 </div>-->
                 <div class="memory-usage">
-                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">MEMORY USAGE</span> <span class="fg-3">────────────────┐</span></pre>
+                    <pre class="inline-block"><span class="fg-3">┌──</span> <span class="blue">Memory Usage</span> <span class="fg-3">────────────────┐</span></pre>
                     <br>
                     <pre class="inline-block"><span class="fg-3">│</span> Total:                 1024 KB <span class="fg-3">│</span></pre>
                     <br>
@@ -192,121 +191,182 @@
         </div>
     </section>
 
-    <!--<section id="projects" class="page-inactive">-->
-    <section id="projects" class="">
-        <div class="flex flex-wrap">
-            <div>
-                <span class="bolder block">Project List <span class="bold gray">(click)</span></span>
-                <div class="inline-block project-wrapper active">
-                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> Guitar Hero Clone </span>─────────────┐</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">└─────────────────────────<span class="project-tag bg-green"> RP2040 </span>┘</span></pre>
-                </div>
-                <br>
-                <div class="inline-block project-wrapper">
-                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> RaspberryUSB </span>──────────────────┐</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">└─────────────────────────<span class="project-tag bg-green"> RP2040 </span>┘</span></pre>
-                </div>
-                <br>
-                <div class="inline-block project-wrapper">
-                    <pre class="inline-block"><span class="fg-3">┌─<span class="blue"> SSH Brute Force Detector </span>──────┐</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> Lorem ipsum dolor sit amet,     </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│</span><span class="fg-1"> consectetur adipiscing elit.    </span><span class="fg-3">│</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">│                                 │</span></pre>
-                    <br>
-                    <pre class="inline-block"><span class="fg-3">└──────────────────────────<span class="project-tag bg-orange"> Linux </span>┘</span></pre>
-                </div>
-            </div>
-            <div id="project-1" class="active">
-                <pre class="inline-block"><span class="fg-3">┌──</span><span class="blue"> DETAILS </span><span class="fg-3">─────────────────────────────────────────────────────────────────┐</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">│<span class="fg-1">                                                                            </span>│</span></pre>
-                <br>
-                <pre class="inline-block"><span class="fg-3">└───────────────────────────────────────────────────────────────<a href="#" target="_blank"> GitHub Repo </a>┘</span></pre>
-            </div>
+    <section id="projects" class="page-inactive flex-column gap-2">
+        <div class="project">
+            <pre class="inline-block fg-3">┌──<span class="blue"> Guitar Hero Clone Game </span>─────────────────────────────────────────────────────────────────┐</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                           │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Status     </span><span class="fg-1">: finished                                                                  </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Language   </span><span class="fg-1">: C, Python                                                                 </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Highlight  </span><span class="fg-1">: developed a custom RP2040 USB controller in bare-metal C                  </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green"> =&gt; Description                                                                            </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    A <span class="green">student-built</span> Guitar Hero-inspired game and custom <span class="green">RP2040</span> controller, combining      </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    Python/PyGame with <span class="green">bare-metal C</span> and low-level USB programming.                         </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">└<span class="project-tag bg-green"> RP2040 </span>──────────────────────────────────────────────────────────────────────<a href="#" target="_blank"> GitHub Repo </a>┘</pre>
+        </div>
+        <div class="project">
+            <pre class="inline-block fg-3">┌──<span class="blue"> Raspberry USB </span>──────────────────────────────────────────────────────────────────────────┐</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                           │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Status     </span><span class="fg-1">: debugging                                                                 </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Language   </span><span class="fg-1">: C                                                                         </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green">    Highlight  </span><span class="fg-1">: built &amp; documented custom USB drivers for the RP2040                      </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="green"> =&gt; Description                                                                            </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    <span class="green">Low-level</span> USB device drivers for <span class="green">RP2040</span> HID devices, implemented with <span class="green">no external</span>      </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    <span class="green">libraries</span> and designed to abstract much of the hardware USB controller &amp; protocol.     </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">└<span class="project-tag bg-green"> RP2040 </span>──────────────────────────────────────────────────────────────────────<a href="#" target="_blank"> GitHub Repo </a>┘</pre>
+        </div>
+        <div class="project">
+            <pre class="inline-block fg-3">┌──<span class="blue"> SSH Brute Force Detector </span>───────────────────────────────────────────────────────────────┐</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                           │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="yellow">    Status     </span><span class="fg-1">: finished                                                                  </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="yellow">    Language   </span><span class="fg-1">: Python                                                                    </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="yellow">    Highlight  </span><span class="fg-1">: generates iptables commands to block malicious IPs                        </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="yellow"> =&gt; Description                                                                            </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    Python script that parses SSH log files &amp; reports IPs that appear malicious. Added     </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">    various options to enhance the security of my Linux home server.                       </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1">                                                                                           </span>│</pre>
+            <br>
+            <pre class="inline-block fg-3">└<span class="project-tag bg-yellow"> Linux </span>───────────────────────────────────────────────────────────────────────<a href="#" target="_blank"> GitHub Repo </a>┘</pre>
         </div>
     </section>
 
     <section id="about" class="page-inactive">
+        <div>
+            <pre class="inline-block fg-3">┌──<span class="blue"> About Me </span>────────────────────────────────────────────────────────────────────────┐</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> Hi, I'm Yanislav <span class="yellow">(or just Yani)!</span> I'm a soon-to-be 2nd year <span class="yellow">Computer Science</span></span>        │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> student at the University of Hertfordshire.</span>                                        │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> During my 1st year, I discovered a deep interest in <span class="yellow">embedded systems and low-level</span></span> │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="yellow">programming.</span> We studied a module on computer architecture and used a custom 8-bit</span>  │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> Assembly language to program things like bubble sort and linked list operations,</span>   │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> which I found <span class="yellow">really intuitive and fascinating.</span></span>                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> It led me to researching <span class="yellow">microcontrollers</span> and working on a bare-metal project</span>      │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> using the <span class="yellow">RP2040.</span> There was no hidden magic in a framework you didn't write, or</span>    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> countless layers of abstraction that just slow the system down - it was purely</span>     │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> interactions with registers which I had to <span class="red">painstakingly</span> dig through <span class="red">hundreds of</span></span>   │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="red">pages of datasheets</span> to find.</span>                                                       │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="purple">But I loved it.</span></span>                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> Right now I'm working with an <span class="green">STM32H7</span> <span class="gray">(and still debugging the RP2040 project),</span></span>    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> learning it the way I tend to learn new things: <span class="green">by building everything from</span></span>        │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="green">scratch</span> so I can truly understand everything.</span>                                      │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> On the programming side, <span class="green">I'm self-taught.</span> I'm still pretty new to this - I only</span>    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> wrote my first line of code in 2023 and I've been occasionally working on <span class="gray">(mostly</span></span>  │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="gray">unfinished)</span> personal projects, like the time I made a <span class="green">Python</span> script to detect</span>      │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> malicious IPs for my home server.</span>                                                  │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> I seek hard problems, which is why I'm building towards an <span class="green">embedded software</span></span>       │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> <span class="green">role</span> - I want to work on challenging and meaningful projects while learning from</span>   │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> people smarter than me.</span>                                                            │</pre>
+            <br>
+            <pre class="inline-block fg-3">│                                                                                    │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> I also blog <span class="green">everything</span> on this site: what I'm learning, experimenting on, and</span>      │</pre>
+            <br>
+            <pre class="inline-block fg-3">│<span class="fg-1"> frustrated over. <span class="purple">Join me as I figure this out!</span></span>                                     │</pre>
+            <br>
+            <pre class="inline-block fg-3">└────────────────────────────────────────────────────────────────────────────────────┘</pre>
+        </div>
     </section>
 
     <section id="contact" class="page-inactive">
+        <div class="flex">
+            <div>
+                <pre class="inline-block fg-3">┌──<span class="blue"> Contact Me </span>────────────────────────────────────────────────┐</pre>
+                <br>
+                <pre class="inline-block fg-3">│                                                              │</pre>
+                <br>
+                <pre class="inline-block fg-3">│<span class="purple"> Open to connect: <span class="fg-1">whether it's questions, opportunities, or</span></span>   │</pre>
+                <br>
+                <pre class="inline-block fg-3">│<span class="fg-1"> just general talk - I'm all ears! <span class="gray">(click links below)</span></span>        │</pre>
+                <br>
+                <pre class="inline-block fg-3">│                                                              │</pre>
+                <br>
+                <pre class="inline-block fg-3">│ ┌────────────────────────────┐┌──────────┐┌────────┐┌──────┐ │</pre>
+                <br>
+                <pre class="inline-block fg-3">└─┤<a href="mailto:yanislavyankov23@gmail.com" target="_blank"> yanislavyankov23@gmail.com </a>├┤<a href="#" target="_blank"> LinkedIn </a>├┤<a href="#" target="_blank"> GitHub </a>├┤<a href="#" target="_blank"> Blog </a>├─┘</pre>
+                <br>
+                <pre class="inline-block fg-3">  └────────────────────────────┘└──────────┘└────────┘└──────┘  </pre>
+            </div>
+        </div>
     </section>
 
-    <section id="blog" class="page-inactive">
+    <section id="blog" class="flex-column jc ac page-inactive">
+        <div class="flex-column jc ac" id="blog-title" style="margin-bottom: 4ch;">
+            <span class="boldest blue" style="margin-top: 1ch;">Yani's Blog</span>
+            <br>
+            <span class="gray">Projects, problems, and progress.</span>
+        </div>
+        <div id="blog-list">
+        </div>
     </section>
 
     <script src="index.js"></script>
 </body>
 
 </html>
+
