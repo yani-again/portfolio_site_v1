@@ -1,0 +1,18 @@
+{
+    "blogs": [
+        {
+            "date": "9th May 2026",
+            "title": "Hello, STM32!",
+            "read_time": "5",
+            "summary": "I made the LED blink! Took a surprising amount of time (10 hours) of reading, setting up CubeIDE, and debugging.",
+            "link": "hello-stm32"
+        },
+        {
+            "date": "18th May 2026",
+            "title": "Hello, Bare-Metal STM32!",
+            "read_time": "12",
+            "summary": "I made the LED blink with bare-metal C! I dug through the HAL libraries and the datasheet to figure out which registers to touch.",
+            "link": "hello-bare-metal-stm32"
+        }
+    ]
+}
