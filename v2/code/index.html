@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yanislav Yankov | Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="image-display">
+        <img src="" alt="">
+    </div>
+
+    <div id="main-content">
+        <header>
+            <span class="fg-2">README.md</span>
+            <button id="change-colour-scheme" class="gray hover-grow">light mode</button>
+        </header>
+
+        <main>
+            <h1>Hey, I'm Yani! 👋</h1>
+
+            <div>
+                <a href="#" target="_blank" class="socials hover-grow fg-blue-full">LinkedIn</a>
+                <a href="#" target="_blank" class="socials hover-grow fg-graphite-full">GitHub</a>
+                <a href="#" target="_blank" class="socials hover-grow fg-red-full">YouTube</a>
+            </div>
+
+
+            <blockquote>
+                <!--I'm a 2nd year CS student at the University of Hertfordshire with a deep interest in embedded systems and low-level coding (especially the C language).-->
+                "What I cannot create, I do not understand. Know how to solve every problem that has been solved." - Richard Feynman
+            </blockquote>
+        </main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm Yanislav Yankov, a 2nd year BSc Computer Science student at the <a href="#" target="_blank">University of Hertfordshire</a> 🇬🇧. During my 1st year, I discovered a deep interest in embedded systems and low-level coding <span class="gray">(especially in the C language).</span>
+                <br><br>
+                Right now I'm working with an STM32H7, learning it the way I tend to learn new things: by building everything from scratch so I can truly understand everything.
+                <br><br>
+                I use Linux daily, enjoy working with microcontrollers <span class="gray">(RP2040, STM32H7),</span> and care about understanding how things work without any abstractions - hence the quote above this paragraph.
+                <br><br>
+                You can also find my blog below, I share everything I learn as I build towards an embedded software role. Join me as I figure this out!
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3 class="inline">RaspberryUSB</h3>
+                <a href="#" target="_blank">(GitHub Repo)</a>
+                <ul>
+                    <li><span class="bold">Status:</span> <span>debugging</span></li>
+                    <li><span class="bold">Language:</span> <span>C</span></li>
+                    <li><span class="bold">Highlight:</span> <span>built &amp; documented custom USB drivers for the RP2040</span></li>
+                </ul>
+                <p>Low-level USB device drivers for RP2040 HID devices, implemented with no external libraries and designed to abstract much of the hardware USB controller &amp; protocol.</p>
+                <br>
+                <div class="image-gallery">
+                    <h4 class="mb-sm">Gallery <span class="gray">(Click To Expand)</span></h4>
+                    <img src="public/rp_prototype.jpeg" alt="Raspberry Pi with buttons plugged in">
+                    <img src="public/rp_diagram.jpeg" alt="Raspberry Pi digital diagram">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="project">
+                <h3 class="inline">Guitar Hero Clone Game</h3>
+                <a href="#" target="_blank">(GitHub Repo)</a>
+                <ul>
+                    <li><span class="bold">Status:</span> <span>finished</span></li>
+                    <li><span class="bold">Language:</span> <span>C, Python</span></li>
+                    <li><span class="bold">Highlight:</span> <span>developed a custom RP2040 USB controller in bare-metal C</span></li>
+                </ul>
+                <p>A student-built Guitar Hero-inspired game and custom RP2040 controller, combining Python/PyGame with bare-metal C and low-level USB programming.</p>
+                <br>
+                <div class="image-gallery">
+                    <h4 class="mb-sm">Gallery <span class="gray">(Click To Expand)</span></h4>
+                    <img src="public/rp_prototype.jpeg" alt="Raspberry Pi with buttons plugged in">
+                    <img src="public/rp_diagram.jpeg" alt="Raspberry Pi digital diagram">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="project">
+                <h3 class="inline">SSH Brute Force Detector</h3>
+                <a href="#" target="_blank">(GitHub Repo)</a>
+                <ul>
+                    <li><span class="bold">Status:</span> <span>finished</span></li>
+                    <li><span class="bold">Language:</span> <span>Python</span></li>
+                    <li><span class="bold">Highlight:</span> <span>generates iptables commands to block malicious IPs</span></li>
+                </ul>
+                <p>Python script that parses SSH log files &amp; reports IPs that appear malicious. Added various options to enhance the security of my Linux home server.</p>
+                <br>
+                <div class="image-gallery">
+                    <h4 class="mb-sm">Gallery <span class="gray">(Click To Expand)</span></h4>
+                    <img src="public/rp_prototype.jpeg" alt="Raspberry Pi with buttons plugged in">
+                    <img src="public/rp_diagram.jpeg" alt="Raspberry Pi digital diagram">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p class="gray">Open to connect: whether it's questions, opportunities, or just general talk - I'm all ears! (click links below)</p>
+            <div>
+                <span><img src="public/gmail.png" alt="gmail" class="inline"><a href="#" target="_blank">yanislavyankov23@gmail.com</a></span>
+                <span><img src="public/linkedin.png" alt="linkedin" class="inline"><a href="#" target="_blank">yani-again</a></span>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <span class="gray">Projects, problems, and progress.</span>
+            <br>
+            <div id="blog-list"></div>
+        </section>
+
+        <footer>
+        </footer>
+    </div>
+
+    <template id="blog-template">
+        <div class="blog">
+            <h3 class="title"></h3>
+            <span class="date gray"></span>
+            <span>|</span>
+            <span class="read-time gray"></span>
+            <div class="mb-md"></div>
+            <p class="summary"></p>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
